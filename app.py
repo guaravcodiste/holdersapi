@@ -35,7 +35,7 @@ print(colored(Hecoinfo.isConnected(),"cyan"))
 
 # url_solona = 'https://api.testnet.solana.com'
 # url_solona = 'https://api.devnet.solana.com'
-# url_solona = 'https://api.devnet.solana.com'# url_solona = 'https://api.devnet.solana.com'# url_solona = 'https://api.devnet.solana.com'
+
 url_solona = 'https://api.mainnet-beta.solana.com'
 
 
