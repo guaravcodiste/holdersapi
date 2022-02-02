@@ -1,0 +1,65 @@
+<body style="background-image: url('https://legal.thomsonreuters.com/blog/wp-content/uploads/sites/19/2021/08/TR1825644_2880x1100-scaled.jpg'); 
+ background-size: 100% 100%;">
+  <img src="https://kovan.etherscan.io/images/logo-ether.png?v=0.0.2" width="250" height="70" alt="alternatetext">
+  <img src="https://etherscan.io/images/ethereum-icon.png" width="50" height="70" alt="alternatetext">
+  <img src="https://etherscan.io/images/ethereum-icon.png" width="50" height="70" alt="alternatetext">
+  <img src="https://kovan.etherscan.io/images/logo-ether.png?v=0.0.2" width="250" height="70" alt="alternatetext">
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <div style="padding-left: 50px; padding-top: 10px;">
+    <form action="http://192.168.1.38:8888/get_balance" method="POST">
+      0xD62856a1faF77Ee5fFA85dDeCbD4462e1A52CA4F
+      <div style="color: rgb(11, 184, 112);"><label>Address : <br><input type="text" class="form-control"
+            placeholder="Add Wallet Address" name="v_address" required></label></div><br>
+      CuieVDEDtLo7FypA9SbLM9saXFdb1dsshEkyErMqkRQq
+      <div style="color: rgb(11, 184, 112);"><label>Solona Address : <input type="text" class="form-control"
+            placeholder="Add Solona Address" name="solona_address" required></label></div><br>
+      C7RYOGEWDT7HZM3HKPSMU7QGWTRWR3EPOQTJ2OHXGYLARD3X62DNWELS34
+      <div style="color: rgb(11, 184, 112);"><label>Algorand Address : <input type="text" class="form-control"
+            placeholder="Add Algorand Address" name="algod_address" required></label></div><br>
+
+      <button type="submit" value="Submit" class="btn btn-danger">Submit</button>
+
+      <input type="hidden" name="form-submit" value="2">
+    </form>
+  </div>
+
+
+
+
+  {% if data %}
+
+  <div style="padding-left: 20px; color: rgb(219, 160, 10);">
+    <!-- 0x39C7BC5496f4eaaa1fF75d88E079C22f0519E7b9 <br>
+      0xD62856a1faF77Ee5fFA85dDeCbD4462e1A52CA4F <br>
+      C7RYOGEWDT7HZM3HKPSMU7QGWTRWR3EPOQTJ2OHXGYLARD3X62DNWELS34 -->
+    <h1 style="color: rgba(240, 12, 12, 0.87);">Address balance :</h1>
+    <h3>Ether Balance : {{data.ETH}}</h3>
+    <h3>Binance Balance : {{data.BSC}}</h3>
+    <h3>Polygon Balance : {{data.MATIC}}</h3>
+    <h3>Fantom Balance : {{data.FTM}}</h3>
+    <h3>Hecoinfo Balance : {{data.HT}}</h3>
+    <h3 style="color: rgba(12, 240, 42, 0.87);">Solona Balance : {{data.solona}}</h3>
+    <h3 style="color: rgba(12, 240, 42, 0.87);">Algorand Balance : {{data.Algorand}}</h3>
+    <h1 style="color: rgb(240, 12, 12, 0.87);">Token :</h1>
+    <!-- <h3>{{jsonfile}}</h3> -->
+    <!-- <h3>{{TokenSolana}}</h3> -->
+
+    {% for jsonobj in jsonfile %}
+    <h3 style="color: red;">{{jsonobj}}</h3>
+    {% for token in jsonfile[jsonobj] %}
+    <h5> {{ token }} : {{jsonfile[jsonobj][token]}}</h5>
+    {%endfor%}
+    {%endfor%}
+
+    <h3 style="color: red;">Solana</h3>
+    {% for solToken in TokenSolana %}
+    <h5> {{ solToken }} : {{TokenSolana[solToken]}}</h5>
+    {%endfor%}
+
+  </div>
+  {%endif%}
+</body>

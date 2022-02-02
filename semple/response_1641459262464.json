@@ -1,0 +1,90 @@
+{
+  "account": {
+    "address": "VLM4RCA2WLSLGJ2DSYNYBQS6SUAKQVLICU5MYWLDLFK7CEFLWC5S66J3QQ",
+    "amount": 31955995,
+    "amount-without-pending-rewards": 31955995,
+    "assets": [
+      {
+        "amount": 0,
+        "asset-id": 43994926,
+        "creator": "",
+        "deleted": false,
+        "is-frozen": false,
+        "opted-in-at-round": 18810553
+      },
+      {
+        "amount": 999999,
+        "asset-id": 24891477,
+        "creator": "",
+        "deleted": false,
+        "is-frozen": false,
+        "opted-in-at-round": 18810575
+      },
+      {
+        "amount": 0,
+        "asset-id": 21582668,
+        "creator": "",
+        "deleted": false,
+        "is-frozen": false,
+        "opted-in-at-round": 18853844
+      },
+      {
+        "amount": 0,
+        "asset-id": 21547225,
+        "creator": "",
+        "deleted": false,
+        "is-frozen": false,
+        "opted-in-at-round": 18890308
+      },
+      {
+        "amount": 1,
+        "asset-id": 10458941,
+        "creator": "",
+        "deleted": false,
+        "is-frozen": false,
+        "opted-in-at-round": 18890339
+      },
+      {
+        "amount": 1,
+        "asset-id": 15322902,
+        "creator": "",
+        "deleted": false,
+        "is-frozen": false,
+        "opted-in-at-round": 18890405
+      },
+      {
+        "amount": 0,
+        "asset-id": 33698417,
+        "creator": "",
+        "deleted": false,
+        "is-frozen": false,
+        "opted-in-at-round": 18919862
+      },
+      {
+        "amount": 1,
+        "asset-id": 12400859,
+        "creator": "",
+        "deleted": false,
+        "is-frozen": false,
+        "opted-in-at-round": 18919901
+      },
+      {
+        "amount": 1,
+        "asset-id": 22060777,
+        "creator": "",
+        "deleted": false,
+        "is-frozen": false,
+        "opted-in-at-round": 18966502
+      }
+    ],
+    "created-at-round": 18785448,
+    "deleted": false,
+    "pending-rewards": 0,
+    "reward-base": 27521,
+    "rewards": 0,
+    "round": 18966554,
+    "sig-type": "sig",
+    "status": "Offline"
+  },
+  "current-round": 18966554
+}
